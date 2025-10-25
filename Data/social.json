@@ -1,7 +1,7 @@
 {
   "name": "Mehedi Shifat",
   "bio": "CSE Student | Full Stack Developer | Exploring AI & DevOps",
-  "profileImage": "./Assets/shifat.jpg",
+  "profileImage": "/Assets/shifat.jpg",
   "socials": [
     {
       "platform": "GitHub",
