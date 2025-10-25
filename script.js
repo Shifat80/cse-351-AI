@@ -46,8 +46,30 @@ topics.forEach(topic => {
         // Load content
         const file = topic.getAttribute('data-file');
         loadContent(file);
+        // Close sidebar on mobile after selection
+        if (window.innerWidth <= 768) {
+            leftSidebar.classList.remove('open');
+        }
     });
 });
+
+// Ensure MathJax is loaded
+function ensureMathJax() {
+    return new Promise((resolve) => {
+        if (window.MathJax && window.MathJax.typesetPromise) {
+            resolve();
+        } else {
+            const check = () => {
+                if (window.MathJax && window.MathJax.typesetPromise) {
+                    resolve();
+                } else {
+                    setTimeout(check, 100);
+                }
+            };
+            check();
+        }
+    });
+}
 
 // Load Markdown content
 async function loadContent(file) {
@@ -59,6 +81,11 @@ async function loadContent(file) {
         const markdown = await response.text();
         const html = marked.parse(markdown);
         contentDiv.innerHTML = html;
+        // Wait for MathJax and render math expressions
+        await ensureMathJax();
+        await window.MathJax.typesetPromise([contentDiv]);
+        // Highlight code blocks
+        Prism.highlightAll();
     } catch (error) {
         contentDiv.innerHTML = `<div class="welcome"><h1>Error</h1><p>Unable to load content: ${error.message}</p></div>`;
     }

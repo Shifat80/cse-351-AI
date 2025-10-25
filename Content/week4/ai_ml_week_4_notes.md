@@ -45,9 +45,9 @@ If we repeatedly take samples from a population and compute their means, the dis
 - The **mean of the sampling distribution** = population mean (μ)
 - The **standard deviation of the sampling distribution** = standard error (SE)
 
-\[
+$$
 SE = \frac{\sigma}{\sqrt{n}}
-\]
+$$
 
 ---
 
@@ -73,17 +73,17 @@ plt.show()
 
 #### **Point Estimation:**
 A single value used to estimate a population parameter.
-- Example: Sample mean \( \bar{X} \) estimates population mean \( \mu \)
+- Example: Sample mean $ \bar{X} $ estimates population mean $ \mu $
 
 #### **Interval Estimation (Confidence Interval):**
 A range of values that likely contains the population parameter.
 
-\[
+$$
 CI = \bar{X} \pm Z_{\alpha/2} \times \frac{\sigma}{\sqrt{n}}
-\]
+$$
 
 For 95% confidence:
-\( Z_{\alpha/2} = 1.96 \)
+$ Z_{\alpha/2} = 1.96 $
 
 **Python Example:**
 ```python
@@ -102,9 +102,9 @@ print('95% Confidence Interval:', ci)
 ### **5. Standard Error (SE)**
 
 - SE measures the variability of a sample statistic.
-\[
+$$
 SE = \frac{\sigma}{\sqrt{n}}
-\]
+$$
 - As sample size increases, SE decreases — meaning larger samples give more reliable estimates.
 
 ---

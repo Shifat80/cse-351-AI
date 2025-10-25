@@ -30,12 +30,12 @@ Input (x₁, x₂, ..., xₜ) → Hidden States (h₁, h₂, ..., hₜ) → Outp
 ```
 
 Each hidden state depends on both the **current input** and the **previous hidden state**:
-\[ h_t = f(W_x x_t + W_h h_{t-1} + b) \]
+$$ h_t = f(W_x x_t + W_h h_{t-1} + b) $$
 
 Where:
-- \( W_x \), \( W_h \): weight matrices
-- \( b \): bias
-- \( f \): activation function (often tanh)
+- $ W_x $, $ W_h $: weight matrices
+- $ b $: bias
+- $ f $: activation function (often tanh)
 
 ---
 
@@ -76,19 +76,19 @@ LSTM adds **gates** that control information flow.
 | Output gate | Decides what to output |
 
 Simplified equations:
-\[ f_t = \sigma(W_f [h_{t-1}, x_t] + b_f) \]
-\[ i_t = \sigma(W_i [h_{t-1}, x_t] + b_i) \]
-\[ \tilde{C}_t = \tanh(W_c [h_{t-1}, x_t] + b_c) \]
-\[ C_t = f_t * C_{t-1} + i_t * \tilde{C}_t \]
-\[ o_t = \sigma(W_o [h_{t-1}, x_t] + b_o) \]
-\[ h_t = o_t * \tanh(C_t) \]
+$$ f_t = \sigma(W_f [h_{t-1}, x_t] + b_f) $$
+$$ i_t = \sigma(W_i [h_{t-1}, x_t] + b_i) $$
+$$ \tilde{C}_t = \tanh(W_c [h_{t-1}, x_t] + b_c) $$
+$$ C_t = f_t * C_{t-1} + i_t * \tilde{C}_t $$
+$$ o_t = \sigma(W_o [h_{t-1}, x_t] + b_o) $$
+$$ h_t = o_t * \tanh(C_t) $$
 
 ---
 
 ## ⚙️ 6. GRU (Gated Recurrent Unit)
 A simplified LSTM with two gates:
-- **Update gate** \( z_t \)
-- **Reset gate** \( r_t \)
+- **Update gate** $ z_t $
+- **Reset gate** $ r_t $
 
 It’s faster and requires fewer parameters.
 

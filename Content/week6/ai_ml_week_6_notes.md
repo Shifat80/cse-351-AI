@@ -44,10 +44,10 @@ Activation functions introduce **non-linearity** to help the network learn compl
 
 | Function | Formula | Use Case |
 |-----------|----------|-----------|
-| **Sigmoid** | \( f(x) = \frac{1}{1 + e^{-x}} \) | Binary classification |
-| **Tanh** | \( f(x) = \tanh(x) \) | Hidden layers (smooth gradient) |
-| **ReLU** | \( f(x) = \max(0, x) \) | Deep networks, fast convergence |
-| **Leaky ReLU** | \( f(x) = x \text{ if } x>0, 0.01x \text{ otherwise} \) | Avoids dead neurons |
+| **Sigmoid** | $ f(x) = \frac{1}{1 + e^{-x}} $ | Binary classification |
+| **Tanh** | $ f(x) = \tanh(x) $ | Hidden layers (smooth gradient) |
+| **ReLU** | $ f(x) = \max(0, x) $ | Deep networks, fast convergence |
+| **Leaky ReLU** | $ f(x) = x \text{ if } x>0, 0.01x \text{ otherwise} $ | Avoids dead neurons |
 | **Softmax** | Converts outputs to probabilities | Multi-class classification |
 
 **Python Visualization:**
@@ -73,11 +73,11 @@ Steps:
 3. Repeat for each layer.
 
 **Example:**
-If \( X = [x_1, x_2] \) and weights \( W = [w_1, w_2] \):
+If $ X = [x_1, x_2] $ and weights $ W = [w_1, w_2] $:
 
-\[
+$$
 A = f(w_1x_1 + w_2x_2 + b)
-\]
+$$
 
 ---
 
@@ -93,7 +93,7 @@ Backpropagation is the process of updating weights to minimize the loss.
 $$
 W = W - \eta \frac{\partial L}{\partial W}
 $$
-Where \( \eta \) is the **learning rate**.
+Where $ \eta $ is the **learning rate**.
 
 ---
 

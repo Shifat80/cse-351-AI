@@ -38,7 +38,7 @@ Input → Convolution → ReLU → Pooling → (Repeat) → Fully Connected → 
 Each filter (e.g., 3×3 matrix) slides over the image to compute dot products.
 
 ### Formula:
-\[ Feature\ Map = Input * Filter + Bias \]
+$$ Feature\ Map = Input * Filter + Bias $$
 
 Example:
 ```python

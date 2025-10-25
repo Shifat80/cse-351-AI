@@ -29,14 +29,14 @@ A subset of the sample space.
 Example: E = {even numbers} = {2, 4, 6}
 
 #### 3. **Probability of E:**
-\( P(E) = \frac{\text{Favorable outcomes}}{\text{Total outcomes}} \)
+$ P(E) = \frac{\text{Favorable outcomes}}{\text{Total outcomes}} $
 
 ---
 
 ### 🔹 Conditional Probability
 Represents the probability of event A **given** that event B occurred.
 
-\[ P(A|B) = \frac{P(A \cap B)}{P(B)} \]
+$$ P(A|B) = \frac{P(A \cap B)}{P(B)} $$
 
 **Example:**
 - A: It’s cloudy
@@ -49,7 +49,7 @@ Then `P(Rain | Cloudy)` is the probability it rains *given* it’s cloudy.
 ### 🔹 Bayes’ Theorem
 One of the most important formulas in AI.
 
-\[ P(H|E) = \frac{P(E|H) P(H)}{P(E)} \]
+$$ P(H|E) = \frac{P(E|H) P(H)}{P(E)} $$
 
 Where:
 - H → Hypothesis (e.g., patient has disease)
@@ -79,9 +79,9 @@ So even if the test is 99% accurate, the probability the person actually has the
 
 ### 🔹 Joint Probability & Independence
 
-**Joint probability:** \( P(A, B) = P(A) * P(B|A) \)
+**Joint probability:** $ P(A, B) = P(A) * P(B|A) $
 
-**If A and B are independent:** \( P(A, B) = P(A) * P(B) \)
+**If A and B are independent:** $ P(A, B) = P(A) * P(B) $
 
 Example:
 ```python
@@ -163,7 +163,7 @@ Assumes features are independent and applies Bayes’ theorem to classify.
 **Example:** Spam Detection.
 
 **Formula:**
-\[ P(Spam | Words) ∝ P(Words | Spam) * P(Spam) \]
+$$ P(Spam | Words) ∝ P(Words | Spam) * P(Spam) $$
 
 **Python Example:**
 ```python
@@ -211,5 +211,5 @@ Build a Python program that calculates the probability of having a disease given
 
 ---
 
-Next Week → **Week 4: Optimization & Constraint Satisfaction Problems (CSP)**  
+Next Week → **Week 4: Optimization & Constraint Satisfaction Problems (CSP)**
 We’ll explore backtracking, local search, and solving puzzles like Sudoku or N-Queens using Python.

@@ -31,13 +31,13 @@ Input (x) → Hidden Layer (z) → Output (y)
 The **perceptron** is the simplest form of a neural network — a single neuron that learns a linear boundary.
 
 ### Formula:
-\[ y = f(\sum w_i x_i + b) \]
+$$ y = f(\sum w_i x_i + b) $$
 
 Where:
-- \( x_i \): inputs
-- \( w_i \): weights
-- \( b \): bias
-- \( f \): activation function (e.g., step function)
+- $ x_i $: inputs
+- $ w_i $: weights
+- $ b $: bias
+- $ f $: activation function (e.g., step function)
 
 Example (Binary classification):
 ```python
@@ -56,10 +56,10 @@ Activation functions add **non-linearity**, allowing the network to learn comple
 Common examples:
 | Function | Formula | Range | Use Case |
 |-----------|----------|--------|-----------|
-| Sigmoid | \( \frac{1}{1+e^{-x}} \) | (0,1) | Probabilities |
-| Tanh | \( \tanh(x) \) | (-1,1) | Centered outputs |
-| ReLU | \( \max(0, x) \) | [0,∞) | Fast convergence |
-| Softmax | \( e^{x_i}/\sum e^{x_j} \) | (0,1) | Multi-class |
+| Sigmoid | $ \frac{1}{1+e^{-x}} $ | (0,1) | Probabilities |
+| Tanh | $ \tanh(x) $ | (-1,1) | Centered outputs |
+| ReLU | $ \max(0, x) $ | [0,∞) | Fast convergence |
+| Softmax | $ e^{x_i}/\sum e^{x_j} $ | (0,1) | Multi-class |
 
 ---
 
@@ -67,10 +67,10 @@ Common examples:
 In forward propagation, data flows from input → output.
 
 Each layer performs:
-\[ z = w \cdot x + b \]
-\[ a = f(z) \]
+$$ z = w \cdot x + b $$
+$$ a = f(z) $$
 
-Where \( a \) is the activation output.
+Where $ a $ is the activation output.
 
 Example:
 ```python
@@ -95,9 +95,9 @@ def forward(x, w1, b1, w2, b2):
 2. Calculate loss (e.g., Mean Squared Error)
 3. Compute gradients of loss wrt weights
 4. Update weights:  
-\[ w = w - \eta * \frac{\partial L}{\partial w} \]
+$$ w = w - \eta * \frac{\partial L}{\partial w} $$
 
-Where \( \eta \) = learning rate.
+Where $ \eta $ = learning rate.
 
 ---
 
@@ -110,7 +110,7 @@ Overfitting happens when the model learns noise instead of the pattern.
 - **L2 Regularization:** Penalize large weights.
 
 Example (L2 term):
-\[ L = Loss + \lambda \sum w^2 \]
+$$ L = Loss + \lambda \sum w^2 $$
 
 ---
 
