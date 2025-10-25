@@ -1,0 +1,32 @@
+{
+  "name": "Mehedi Shifat",
+  "bio": "CSE Student | Full Stack Developer | Exploring AI & DevOps",
+  "profileImage": "../Assets/shifat.jpg",
+  "socials": [
+    {
+      "platform": "GitHub",
+      "url": "https://github.com/Shifat80",
+      "icon": "fa-brands fa-github"
+    },
+    {
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/in/mehedi-hasan-shifat/",
+      "icon": "fa-brands fa-linkedin"
+    },
+    {
+      "platform": "Twitter",
+      "url": "https://x.com/MehediShifat9",
+      "icon": "fa-brands fa-x-twitter"
+    },
+    {
+      "platform": "Email",
+      "url": "mailto:mehedihasanshipat4@email.com",
+      "icon": "fa-solid fa-envelope"
+    },
+    {
+        "platform": "website",
+        "url": "https://www.mhshifat.me",
+        "icon": "fa-brands fa-chrome"
+    }
+  ]
+}

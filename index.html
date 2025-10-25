@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Study Documentation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar left-sidebar">
+            <div class="sidebar-header">
+                <h2>Topics</h2>
+                <button class="toggle-btn" id="left-toggle"><i class="fas fa-bars"></i></button>
+            </div>
+            <nav class="nav-menu">
+                <div class="week" data-week="week1">
+                    <div class="week-header">
+                        <span>Week 1</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="topics">
+                        <li data-file="Content/week1/ai_course_notes_week-1.md">Introduction to AI</li>
+                    </ul>
+                </div>
+                <div class="week" data-week="week2">
+                    <div class="week-header">
+                        <span>Week 2</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="topics">
+                        <li data-file="Content/week2/ai_course_notes_week_2.md">Machine Learning Basics</li>
+                    </ul>
+                </div>
+                <div class="week" data-week="week3">
+                    <div class="week-header">
+                        <span>Week 3</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="topics">
+                        <li data-file="Content/week3/ai_course_notes_week_3.md">Deep Learning Fundamentals</li>
+                    </ul>
+                </div>
+                <div class="week" data-week="week4">
+                    <div class="week-header">
+                        <span>Week 4</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="topics">
+                        <li data-file="Content/week4/ai_ml_week_4_notes.md">Neural Networks</li>
+                    </ul>
+                </div>
+                <div class="week" data-week="week5">
+                    <div class="week-header">
+                        <span>Week 5</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="topics">
+                        <li data-file="Content/week5/ai_ml_week_5_notes.md">Computer Vision</li>
+                    </ul>
+                </div>
+                <div class="week" data-week="week6">
+                    <div class="week-header">
+                        <span>Week 6</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="topics">
+                        <li data-file="Content/week6/ai_ml_week_6_notes.md">Natural Language Processing</li>
+                    </ul>
+                </div>
+                <div class="week" data-week="week7">
+                    <div class="week-header">
+                        <span>Week 7</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="topics">
+                        <li data-file="Content/week7/ai_ml_week_7_notes.md">Reinforcement Learning</li>
+                    </ul>
+                </div>
+                <div class="week" data-week="week8">
+                    <div class="week-header">
+                        <span>Week 8</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="topics">
+                        <li data-file="Content/week8/week_8_cnn_notes.md">Convolutional Neural Networks</li>
+                    </ul>
+                </div>
+                <div class="week" data-week="week9">
+                    <div class="week-header">
+                        <span>Week 9</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="topics">
+                        <li data-file="Content/week9/week_9_rnn_notes.md">Recurrent Neural Networks</li>
+                    </ul>
+                </div>
+                <div class="week" data-week="week10">
+                    <div class="week-header">
+                        <span>Week 10</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="topics">
+                        <li data-file="Content/week10/week_10_nlp_roadmap.md">NLP Roadmap</li>
+                    </ul>
+                </div>
+                <div class="week" data-week="fullcourse">
+                    <div class="week-header">
+                        <span>Full Course</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="topics">
+                        <li data-file="Content/fullcourse/ai_ml_full_course_notes.md">Complete AI/ML Notes</li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <div class="content-header">
+                <button class="toggle-btn" id="theme-toggle"><i class="fas fa-moon"></i></button>
+            </div>
+            <div id="content" class="content">
+                <div class="welcome">
+                    <h1>Welcome to AI Study Documentation</h1>
+                    <p>Select a topic from the sidebar to begin learning.</p>
+                </div>
+            </div>
+        </main>
+        <aside class="sidebar right-sidebar">
+            <div class="sidebar-header">
+                <h2>Profile</h2>
+                <button class="toggle-btn" id="right-toggle"><i class="fas fa-user"></i></button>
+            </div>
+            <div class="profile">
+                <img src="../Assets/shifat.jpg" alt="Profile Photo" class="profile-photo">
+                <h3>Mehedi Shifat</h3>
+                <p class="bio">CSE Student | Full Stack Developer | Exploring AI & DevOps</p>
+                <div class="social-links">
+                    <a href="https://github.com/Shifat80" class="social-link" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/mehedi-hasan-shifat/" class="social-link" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://x.com/MehediShifat9" class="social-link" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="mailto:mehedihasanshipat4@email.com" class="social-link" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://www.mhshifat.me" class="social-link" title="website"><i class="fa-brands fa-chrome"></i></a>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
